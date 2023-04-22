@@ -5,9 +5,9 @@ import numpy as np
 import torch
 import torch.utils.data
 
-import modules.commons as commons
+import svcmodules.commons as commons
 import sovits_utils
-from modules.mel_processing import spectrogram_torch, spec_to_mel_torch
+from svcmodules.mel_processing import spectrogram_torch, spec_to_mel_torch
 from sovits_utils import load_wav_to_torch, load_filepaths_and_text
 
 # import h5py

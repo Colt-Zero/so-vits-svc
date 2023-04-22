@@ -19,19 +19,19 @@ import torch.multiprocessing as mp
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-import modules.commons as commons
+import svcmodules.commons as commons
 import sovits_utils
 from data_utils import TextAudioSpeakerLoader, TextAudioCollate
 from models import (
     SynthesizerTrn,
     MultiPeriodDiscriminator,
 )
-from modules.losses import (
+from svcmodules.losses import (
     kl_loss,
     generator_loss, discriminator_loss, feature_loss
 )
 
-from modules.mel_processing import mel_spectrogram_torch, spec_to_mel_torch
+from svcmodules.mel_processing import mel_spectrogram_torch, spec_to_mel_torch
 
 torch.backends.cudnn.benchmark = True
 global_step = 0
