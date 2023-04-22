@@ -5,9 +5,9 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-import modules.commons as commons
-import modules.modules as modules
-from modules.modules import LayerNorm
+import svcmodules.commons as commons
+import svcmodules.modules as modules
+from svcmodules.modules import LayerNorm
 
 
 class FFT(nn.Module):

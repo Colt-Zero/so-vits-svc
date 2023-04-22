@@ -4,15 +4,15 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-import modules.attentions as attentions
-import modules.commons as commons
-import modules.modules as modules
+import svcmodules.attentions as attentions
+import svcmodules.commons as commons
+import svcmodules.modules as modules
 
 from torch.nn import Conv1d, ConvTranspose1d, AvgPool1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 
 import sovits_utils
-from modules.commons import init_weights, get_padding
+from svcmodules.commons import init_weights, get_padding
 from vdecoder.hifigan.models import Generator
 from sovits_utils import f0_to_coarse
 
